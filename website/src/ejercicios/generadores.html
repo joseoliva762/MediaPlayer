@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generadores</title>
+</head>
+<body>
+    <h1 class="generadores">
+        Ejercicio de generadores
+    </h1>
+    <script src="https://unpkg.com/fast-levenshtein@2.0.6/levenshtein.js"></script>
+    <script>
+        function* simpleGenerator(){
+            console.log(`Inicio...`);
+            yield 2;
+            console.log(`Final...`);
+        }
+
+        function* idMaker(){
+            let id = 1;
+            while(true){
+                yield id;
+                id++;
+            }
+        }
+
+        function* idMakerwithReset(){
+            let id = 1;
+            let reset;
+            while(true){
+                reset = yield id;
+                id = reset ?  1 : id + 1;
+            }
+        }
+
+        function* fibbonacci(){
+            let a = 1, b =1;
+            while(true){
+                const nextNumber = a + b;
+                a = b;
+                b = nextNumber;
+                yield nextNumber;
+            }
+        }
+        // const gen  = simpleGenerator()
+    </script>
+</body>
+</html>

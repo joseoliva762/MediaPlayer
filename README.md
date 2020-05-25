@@ -1,2 +1,2 @@
-# ProfesionalJS
-ProfesionalJS
+# MediaPlayer
+Plugin de video

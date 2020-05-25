@@ -1,0 +1,28 @@
+{
+  "name": "@joseoliva762/mediaplayerplugin",
+  "version": "1.0.0",
+  "description": "Plugin Para Reproduccion de Video",
+  "main": "lib/MediaPlayer.js",
+  "scripts": {
+    "build": "tsc src/**/*.ts src/plugins/*.ts  src/plugins/**/*.ts --outDir  lib",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joseoliva762/MediaPlayer.git"
+  },
+  "keywords": [
+    "JavaScript",
+    "TypeScript",
+    "Media"
+  ],
+  "author": "Jose Oliva <joseoliva762@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/joseoliva762/MediaPlayer/issues"
+  },
+  "homepage": "https://github.com/joseoliva762/MediaPlayer#readme",
+  "devDependencies": {
+    "typescript": "^3.9.3"
+  }
+}
